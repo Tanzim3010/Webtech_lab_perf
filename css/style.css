@@ -586,12 +586,12 @@ td {
 }
  
 tr {
-    background-color: #ef7a7a;
+    background-color: #000000;
     transition: background-color 0.2s ease;
 }
  
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #000000;
 }
  
 tr:hover {
