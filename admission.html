@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/Image/Favicon.webp">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Student Registration Form</h1>
+        <form>
+            <label for="name">Student Name</label>
+            <input type="text" id="name" name="student_name" placeholder="Enter full name" required>
+
+            <label for="father">Father's Name</label>
+            <input type="text" id="father" name="father_name" placeholder="Enter father's name" required>
+
+            <label for="mother">Mother's Name</label>
+            <input type="text" id="mother" name="mother_name" placeholder="Enter mother's name" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Gender</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+
+            <label for="blood">Blood Group</label>
+            <select id="blood" name="blood_group" required>
+                <option value="">Select blood group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+            <label for="class">Class</label>
+            <input type="number" id="class" name="class" min="1" max="12" placeholder="Enter class" required>
+
+            <label for="section">Section</label>
+            <input type="text" id="section" name="section" placeholder="Enter section" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="4" placeholder="Enter your address" required></textarea>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm_password" placeholder="Re-enter password" required>
+
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

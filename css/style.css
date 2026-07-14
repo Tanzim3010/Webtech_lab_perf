@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#020232;
+    color:#1e293b;
+    padding:30px 15px;
+}
+
+.form-container{
+    width:760px;
+    max-width:100%;
+    margin:auto;
+    background:rgb(136, 177, 247);
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+    overflow:hidden;
+}
+
+h1{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:28px;
+}
+
+form{
+    padding:25px;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #bcd2f7;
+    border-radius:8px;
+    font-size:15px;
+    background:#f8fbff;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border:1px solid #2563eb;
+    background:white;
+    box-shadow:0 0 7px rgba(37,99,235,0.5);
+}
+
+textarea{
+    height:90px;
+    resize:vertical;
+}
+
+.radio-group{
+    margin-top:8px;
+}
+
+.radio-group label{
+    display:inline-block;
+    margin-right:15px;
+    font-weight:normal;
+}
+
+.radio-group input{
+    width:auto;
+    margin-right:5px;
+}
+
+.button-group{
+    margin-top:20px;
+    text-align:center;
+}
+
+button{
+    width:150px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    color:white;
+    cursor:pointer;
+    margin:5px;
+}
+
+button[type="submit"]{
+    background:#2563eb;
+}
+
+button[type="submit"]:hover{
+    background:#1d4ed8;
+    box-shadow:0 0px 10px rgba(22, 91, 240, 0.626);
+}
+
+button[type="reset"]{
+    background:#ef4444;
+}
+
+button[type="reset"]:hover{
+    background:#dc2626;
+    box-shadow: 0 0px 10px rgba(208, 27, 27, 0.662);
+}
+
+@media screen and (max-width:768px){
+
+.form-container{
+    width:100%;
+}
+
+button{
+    width:100%;
+}
+
+.radio-group label{
+    display:block;
+    margin-bottom:8px;
+}
+
+}
+
+.slider{
+    width:100%;
+    height:400px;
+    margin:20px auto;
+    overflow:hidden;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.slider img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    display:block;
+}
