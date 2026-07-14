@@ -14,13 +14,34 @@ body {
     padding: 0;
 }
 
-#name {
+.admission-page #name,
+.admission-page input[type="text"],
+.admission-page input[type="email"],
+.admission-page input[type="password"],
+.admission-page input[type="date"],
+.admission-page input[type="tel"],
+.admission-page input[type="number"],
+.admission-page select,
+.admission-page textarea {
     width: 100%;
-    border: 3px solid rgb(87, 10, 10);
-    background-color: rgb(2, 63, 63);
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0px 4px 50px rgb(2, 27, 63);
+    padding: 12px 14px;
+    border: 1px solid #c7d7ea;
+    border-radius: 10px;
+    background: #f8fbff;
+    color: #1e293b;
+    font-size: 15px;
+    transition: 0.3s;
+    box-shadow: none;
+}
+
+.admission-page #name:focus,
+.admission-page input:focus,
+.admission-page select:focus,
+.admission-page textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.16);
+    background: white;
 }
 
 #navbar {
@@ -276,6 +297,23 @@ form{
     border: 1px solid #e2e8f0;
 }
 
+.admission-page .back-btn {
+    display: inline-block;
+    margin: 20px 20px 0;
+    padding: 10px 14px;
+    background: #e2e8f0;
+    color: #1e293b;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.admission-page .back-btn:hover {
+    background: #cbd5e1;
+    transform: translateX(-2px);
+}
+
 .admission-page h1 {
     background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
     color: white;
@@ -334,6 +372,13 @@ form{
 .admission-page textarea {
     min-height: 100px;
     resize: vertical;
+}
+
+.admission-page textarea.single-line-textarea {
+    min-height: 48px;
+    height: 48px;
+    resize: none;
+    overflow: hidden;
 }
 
 .admission-page .radio-group {
